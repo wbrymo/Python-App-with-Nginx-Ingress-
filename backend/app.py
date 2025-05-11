@@ -15,7 +15,7 @@ quotes = [
     "I'm the king of the world!"
 ]
 
-@app.route("/quote")
+@app.route("/api/quote")
 def get_quote():
     return jsonify({"quote": random.choice(quotes)})
 
